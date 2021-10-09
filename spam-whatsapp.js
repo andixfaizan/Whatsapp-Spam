@@ -1,10 +1,10 @@
 // var btn_send = "/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[3]/button";
 
-if (document.getElementsByClassName("_1awRl copyable-text selectable-text")[1].outerText == "") {
+if (document.getElementsByClassName("_13NKt copyable-text selectable-text")[1].outerText == "") {
     alert("diisi pesannya dulu goblok");
 } else {
     var berapa_kali = prompt("Arep kok spam pek piro cok", "");
-    var pesan = document.getElementsByClassName("_1awRl copyable-text selectable-text")[1].outerText;
+    var pesan = document.getElementsByClassName("_13NKt copyable-text selectable-text")[1].outerText;
     for(var i = 0; i < parseInt(berapa_kali); i++){
         document.getElementsByClassName("Srlyw")[1].style.visibility = "hidden";
         InputEvent = Event || InputEvent;
@@ -12,8 +12,8 @@ if (document.getElementsByClassName("_1awRl copyable-text selectable-text")[1].o
             bubbles: true,
 	        composer: true
         });
-        document.getElementsByClassName("_1awRl copyable-text selectable-text")[1].innerHTML = pesan;
-        document.getElementsByClassName("_1awRl copyable-text selectable-text")[1].dispatchEvent(evt);
+        document.getElementsByClassName("_13NKt copyable-text selectable-text")[1].innerHTML = pesan;
+        document.getElementsByClassName("_13NKt copyable-text selectable-text")[1].dispatchEvent(evt);
         if(typeof document.getElementsByClassName("_2Ujuu")[0] == "object"){
             eventFire(document.getElementsByClassName("_2Ujuu")[0], 'click');
         }
